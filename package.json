@@ -1,0 +1,34 @@
+{
+  "name": "mojito-cli-profiler",
+  "version": "0.0.1",
+  "description": "",
+  "main": "profiler.js",
+  "dependencies": {
+    "npmlog": "0.0.2"  
+  },
+  "devDependencies": {
+    "tap": "~0.4.1"
+  },
+  "engines": {
+    "node": ">0.8",
+    "npm": ">1.1"
+  },
+  "scripts": {
+    "lint": "jshint {.,lib}/*.js",
+    "test": "node tests",
+    "cover": "istanbul cover --dir artifacts/coverage tests",
+    "clean": "git clean -dfx {.,tests}/artifacts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yahoo/mojito-cli-profiler.git"
+  },
+  "bugs": "https://github.com/yahoo/mojito-cli-profiler/issues",
+  "contributors": [
+    "Caridy Patino <caridy@gmail.com>",
+    "Drew Folta <drew@folta.net>",
+    "Isao Yagi <isao@yahoo-inc.com>"
+  ],
+  "license": "BSD",
+  "keywords": []
+}
