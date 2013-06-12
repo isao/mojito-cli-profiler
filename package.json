@@ -1,7 +1,7 @@
 {
   "name": "mojito-cli-profiler",
   "version": "0.0.1",
-  "description": "",
+  "description": "Provides the `profiler` command for the `mojito-cli` tool.",
   "main": "profiler.js",
   "dependencies": {
     "npmlog": "0.0.2"  
@@ -30,5 +30,5 @@
     "Isao Yagi <isao@yahoo-inc.com>"
   ],
   "license": "BSD",
-  "keywords": []
+  "keywords": ["mojito", "cli", "instrumentation"]
 }
