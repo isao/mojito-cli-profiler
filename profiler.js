@@ -12,11 +12,10 @@
 //  * draw each request separately somehow
 
 
-var run,
+var log = require('./lib/log'),
     libpath = require('path'),
     libfs = require('fs'),
-    existsSync = libfs.existsSync || libpath.existsSync,
-    libutils = require(libpath.join(__dirname, '../../management/utils')),
+    existsSync = libfs.existsSync,
 
     MODE_ALL = parseInt('777', 8),
 
@@ -218,7 +217,7 @@ function svgDraw(file, log) {
 }
 
 
-run = function(params, options) {
+function run(params, options) {
     var env,
         store,
         inFile,
@@ -226,15 +225,13 @@ run = function(params, options) {
         lines,
         log;
 
-    libutils.warn('The profiler command is deprecated and will be removed in a subsequent release.');
-
     options = options || {};
 
     // default input if --input filename.ext is not set
     inFile = options.input || 'perf.log';
 
     if (params.length) {
-        libutils.error('Unknown extra parameters.');
+        log.error('Unknown extra parameters.');
         return;
     }
 
@@ -254,7 +251,7 @@ run = function(params, options) {
     svgDraw(outFile, log);
 
     console.log('graph drawn in ' + outFile);
-};
+}
 
 
 /**
@@ -280,5 +277,3 @@ exports.options = [
  * Standard run method hook export.
  */
 exports.run = run;
-
-
