@@ -6,6 +6,8 @@ This package provides the `profiler` command for the [`mojito-cli`](https://gith
     npm install -g mojito-cli
     npm install -g mojito-cli-profiler
 
+Note that this relies on the environment variable `$NODE_PATH` to include the path returned with `npm root -g`.
+
 ## Set Up
 
 Your app's application.json file should have a perf config object, like:
