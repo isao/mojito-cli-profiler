@@ -6,7 +6,7 @@ This package provides the `profiler` command for the [`mojito-cli`](https://gith
     npm install -g mojito-cli
     npm install -g mojito-cli-profiler
 
-Note that this relies on the environment variable `$NODE_PATH` to include the path returned with `npm root -g`.
+Note: the environment variable `$NODE_PATH` must include the npm library path, i.e. the path displayed with `npm root -g`.
 
 ## Set Up
 
