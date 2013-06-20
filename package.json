@@ -4,7 +4,7 @@
   "description": "Provides the `profiler` command for the `mojito-cli` tool.",
   "main": "profiler.js",
   "dependencies": {
-    "npmlog": "0.0.2"  
+    "npmlog": "0.0.2"
   },
   "devDependencies": {
     "tap": "~0.4.1"
