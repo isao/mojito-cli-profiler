@@ -12,8 +12,7 @@
 //  * draw each request separately somehow
 
 
-var log = require('./lib/log'),
-    libpath = require('path'),
+var libpath = require('path'),
     libfs = require('fs'),
     existsSync = libfs.existsSync,
 
@@ -218,9 +217,7 @@ function svgDraw(file, log) {
 
 
 function run(params, options) {
-    var env,
-        store,
-        inFile,
+    var inFile,
         outFile,
         lines,
         log;
